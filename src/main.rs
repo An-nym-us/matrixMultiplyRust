@@ -39,7 +39,7 @@ pub fn Run_multiply_a_b(a: &[Vec<f64>], b: &[Vec<f64>]) -> Vec<Vec<f64>> {
 
 
 
-
+// Create the random Matrixes based on the size input
 use rand::distributions::{Distribution, Uniform};
 use rand::thread_rng;
 fn random_matrix(n: usize) -> Vec<Vec<f64>> {
@@ -53,13 +53,13 @@ fn random_matrix(n: usize) -> Vec<Vec<f64>> {
 fn Run() {
     let a = random_matrix(77);
     let b = random_matrix(77);
-    Run_multiply_a_b(&a, &b);
+    Run_multiply_a_b(&a, &b); // Multiply the two matrixes
 
 }
 
 fn main() {
 
-    Run();
+    Run(); 
 
     
 
