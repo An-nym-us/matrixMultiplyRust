@@ -1,6 +1,6 @@
 use rayon::prelude::*;
 
-/// Sequentially multiply A and B square matrices.
+
 pub fn simple_multiply_a_b(a: &[Vec<f64>], b: &[Vec<f64>]) -> Vec<Vec<f64>> {
     if b.len() == 0 {
         return vec![];
@@ -27,9 +27,6 @@ pub fn simple_multiply_a_b(a: &[Vec<f64>], b: &[Vec<f64>]) -> Vec<Vec<f64>> {
         for i in 0..n {
             for k in 0..n {
                 c[i][j] += a[i][k] * b[k][j];
-
-
-
                 println!("{}", c[i][j]);
             }
         }
@@ -54,8 +51,8 @@ fn random_matrix(n: usize) -> Vec<Vec<f64>> {
 }
 
 fn test_sequential_multiplication() {
-    let a = random_matrix(150);
-    let b = random_matrix(150);
+    let a = random_matrix(77);
+    let b = random_matrix(77);
     simple_multiply_a_b(&a, &b);
 
 }
