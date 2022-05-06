@@ -17,10 +17,10 @@ version 0.8.4. And lastly, I am using the 64-bit version of Rust on my system.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](https://users.rust-lang.org/)
-* [Web Site Name](https://stackoverflow.com/)
-* [Web Site Name](https://www.tutorialspoint.com/rust/rust_iterator_and_closure.htm)
+
+* [Main Rust Website](https://users.rust-lang.org/)
+* [Stack Overflow](https://stackoverflow.com/)
+* [Tutorials Point](https://www.tutorialspoint.com/rust/rust_iterator_and_closure.htm)
 
 # Future Work
 
