@@ -1,7 +1,7 @@
 use rayon::prelude::*;
 
 
-pub fn simple_multiply_a_b(a: &[Vec<f64>], b: &[Vec<f64>]) -> Vec<Vec<f64>> {
+pub fn Run_multiply_a_b(a: &[Vec<f64>], b: &[Vec<f64>]) -> Vec<Vec<f64>> {
     if b.len() == 0 {
         return vec![];
     } else {
@@ -50,16 +50,16 @@ fn random_matrix(n: usize) -> Vec<Vec<f64>> {
         .collect()
 }
 
-fn test_sequential_multiplication() {
+fn Run() {
     let a = random_matrix(77);
     let b = random_matrix(77);
-    simple_multiply_a_b(&a, &b);
+    Run_multiply_a_b(&a, &b);
 
 }
 
 fn main() {
 
-    test_sequential_multiplication();
+    Run();
 
     
 
